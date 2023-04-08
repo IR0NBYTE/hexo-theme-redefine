@@ -10,22 +10,22 @@
 # BASIC INFORMATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 info:
   # Site title
-  title: Theme Redefine
+  title: IRONBYTE
   # Author name
-  author: The Redefine Team
+  author: Med Ali Ouachani
   # Site URL
-  url: https://redefine.ohevan.com
+  url: https://ironbyte.me
 # BASIC INFORMATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
 # IMAGE CONFIGURATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 defaults:
   # Favicon
-  favicon: /images/redefine-favicon.svg
+  favicon: https://cdn-icons-png.flaticon.com/128/5779/5779173.png
   # Site logo
-  logo: 
+  logo: https://ih1.redbubble.net/image.2218016365.0089/st,small,507x507-pad,600x600,f8f8f8.jpg
   # Site avatar
-  avatar: /images/redefine-avatar.svg
+  avatar: https://flipanim.com/gif/a/z/azn1HA50.gif
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -99,10 +99,10 @@ home_banner:
     light: /images/wallhaven-wqery6-light.webp # light mode
     dark: /images/wallhaven-wqery6-dark.webp # dark mode
   # Home banner title
-  title: Theme Redefine
+  title: Exploring the Intersection of Computing and Security
   # Home banner subtitle
   subtitle:
-    text: [] # subtitle text, array
+    text: [Venturing Uncharted Realms.] # subtitle text, array
     typing_speed: 100 # Typing speed (ms)
     backing_speed: 80 # Backing speed (ms)
     starting_delay: 500 # Start delay (ms)
@@ -158,19 +158,22 @@ navbar:
     Home: 
       path: / 
       icon: fa-regular fa-house # can be empty
-    # Archives: 
-    #   path: /archives 
-    #   icon: fa-regular fa-archive # can be empty
-    # Status: 
-    #   path: https://status.evanluo.top/
-    #   icon: fa-regular fa-chart-bar
-    # About: 
-    #   icon: fa-regular fa-user
-    #   submenus:
-    #     Me: /about
-    #     Github: https://github.com/EvanNotFound/hexo-theme-redefine
-    #     Blog: https://ohevan.com
-    #     Friends: /friends
+    Archives: 
+      path: /archives 
+      icon: fa-regular fa-archive # can be empty
+    Articels : 
+      path: /../../../../Articles
+      icon: fa-regular fa-book
+    CTF Writeups : 
+      path: /../../../../writeups
+      icon: fa-regular fa-book
+    About: 
+      icon: fa-regular fa-user
+      submenus:
+        Who am I?: /../../../../aboutMe
+        Linkedin: https://www.linkedin.com/in/med-ali-ouachani/
+        Twitter: https://twitter.com/Ir0nbyte
+        Github: https://github.com/IR0NBYTE
     # Links: 
     #   icon: fa-regular fa-link
     #   submenus:
@@ -192,12 +195,12 @@ home:
   # Sidebar settings
   sidebar:
     enable: true # Whether to enable sidebar
-    position: left # Sidebar position. left, right
+    position: right # Sidebar position. left, right
     announcement: # Announcement text
     links:
-      # Archives: 
-      #   path: /archives 
-      #   icon: fa-regular fa-archive # can be empty
+      Archives: 
+        path: /archives 
+        icon: fa-regular fa-archive # can be empty
       # Tags: 
       #   path: /tags 
       #   icon: fa-regular fa-tags # can be empty
@@ -246,7 +249,7 @@ articles:
       url: # Font URL to CSS file
   # Table of contents settings
   toc:
-    enable: true # Whether to enable TOC
+    enable: false # Whether to enable TOC
     max_depth: 3 # TOC depth
     number: false # Whether to add number to TOC automatically
     expand: true # Whether to expand TOC
@@ -273,7 +276,7 @@ articles:
 # COMMENT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 comment:
   # Whether to enable comment
-  enable: true
+  enable: false
   # Comment system
   system: waline # waline, gitalk, twikoo
   # System configuration
@@ -334,20 +337,18 @@ plugins:
   # RSS feed. Requires hexo-generator-feed (npm i hexo-generator-feed). See https://github.com/hexojs/hexo-generator-feed
   feed:
     enable: false # Whether to enable
-  # Aplayer. See https://github.com/DIYgod/APlayer
+  # Aplayer (fixed). See https://github.com/DIYgod/APlayer
   aplayer:
     enable: false # Whether to enable
-    type: fixed # fixed, mini
     audios:
-      - name: # audio name
-        artist: # audio artist
-        url: # audio url
-        cover: # audio cover url
-      # - name: # audio name
-      #   artist: # audio artist
-      #   url: # audio url
-      #   cover: # audio cover url
-      # .... you can add more audios here
+      - name: Something like this
+        artist: Coldplay
+        url: https://www.youtube.com/watch?v=FM7MFYoylVs
+        cover: https://www.youtube.com/watch?v=FM7MFYoylVs
+      - name: 
+        artist: 
+        url: 
+        cover: 
   # Mermaid JS. Requires hexo-filter-mermaid-diagrams (npm i hexo-filter-mermaid-diagrams). See https://mermaid.js.org/
   mermaid:
     enable: false # enable mermaid or not
