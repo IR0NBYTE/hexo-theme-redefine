@@ -14,7 +14,7 @@ info:
   # Author name
   author: Med Ali Ouachani
   # Site URL
-  url: https://ironbyte.me
+  url: https://ironbyte.tech
 # BASIC INFORMATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -99,7 +99,7 @@ home_banner:
     light: /images/wallhaven-wqery6-light.webp # light mode
     dark: /images/wallhaven-wqery6-dark.webp # dark mode
   # Home banner title
-  title: Exploring the Intersection of Computing and Security
+  title: Exploring the Intersection of Computing and Security XXX
   # Home banner subtitle
   subtitle:
     text: [Venturing Uncharted Realms.] # subtitle text, array
